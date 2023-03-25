@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/.gradle/
+/build/
+/gradle/
+/storage/
+build.properties
+/.idea/
+/META-INF/
+todo.txt
+/tokens/
