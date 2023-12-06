@@ -49,6 +49,11 @@ buildConfig {
 }
 
 
-war {
-    enabled=true
+shadowJar {
+    mergeServiceFiles()
+    manifest {
+        attributes(
+            'Main-Class': 'src.main.kotlin.shl.scraper.Main'
+        )
+    }
 }
