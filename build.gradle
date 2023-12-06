@@ -46,11 +46,4 @@ dependencies {
 buildConfig {
     clsName = 'BuildProperties'
     packageName = 'shl.scraper.config'
-
-    def props = new Properties()
-    file("build.properties").withInputStream { props.load(it) }
-
-    buildConfigField('String', 'RELEASE_BOT_TOKEN') { System.getenv("releaseBotToken") }
-    buildConfigField('String', 'DEBUG_BOT_TOKEN') { System.getenv("debugBotToken")}
-    buildConfigField('String', 'TEST_SERVER_ID') { System.getenv("testServerId") }
 }
