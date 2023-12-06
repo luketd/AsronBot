@@ -83,7 +83,7 @@ class HelpCommand : DiscordCommand() {
             addField {
                 it.append(
                     "If you want to add this bot to your server," +
-                            " [use this link](https://discord.com/api/oauth2/authorize?client_id=623014007221256192&permissions=280576&scope=bot)"
+                            " [use this link](https://discord.com/api/oauth2/authorize?client_id=1181766251366858772&permissions=125968&scope=bot)"
                 )
             }
         }
