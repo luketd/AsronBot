@@ -1,1 +1,1 @@
-worker: java -jar build/libs/SHLScraper-1.0-SNAPSHOT-all.jar
+worker: java -jar build/libs/SHLScraper-1.0-SNAPSHOT.jar
