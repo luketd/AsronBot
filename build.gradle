@@ -47,3 +47,8 @@ buildConfig {
     clsName = 'BuildProperties'
     packageName = 'shl.scraper.config'
 }
+
+
+war {
+    enabled=true
+}
