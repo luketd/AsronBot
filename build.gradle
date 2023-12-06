@@ -50,7 +50,7 @@ buildConfig {
     def props = new Properties()
     file("build.properties").withInputStream { props.load(it) }
 
-    buildConfigField('String', 'RELEASE_BOT_TOKEN') { props.getProperty("releaseBotToken") }
-    buildConfigField('String', 'DEBUG_BOT_TOKEN') { props.getProperty("debugBotToken") }
-    buildConfigField('String', 'TEST_SERVER_ID') { props.getProperty("testServerId") }
+    buildConfigField('String', 'RELEASE_BOT_TOKEN') { System.getenv("releaseBotToken") }
+    buildConfigField('String', 'DEBUG_BOT_TOKEN') { System.getenv("debugBotToken")}
+    buildConfigField('String', 'TEST_SERVER_ID') { System.getenv("testServerId") }
 }

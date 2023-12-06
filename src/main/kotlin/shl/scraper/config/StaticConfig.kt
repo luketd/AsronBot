@@ -8,13 +8,13 @@ sealed class BuildTypeConfig(
     val indexUpdateChannelId: String
 ) {
     object Debug : BuildTypeConfig(
-        discordBotToken = BuildProperties.DEBUG_BOT_TOKEN,
-        indexUpdateServerId = BuildProperties.TEST_SERVER_ID,
+        discordBotToken = System.getenv("releaseBotToken"),
+        indexUpdateServerId = System.getenv("testServerId"),
         indexUpdateChannelId = "623122991504687104"
     )
 
     object Release : BuildTypeConfig(
-        discordBotToken = BuildProperties.RELEASE_BOT_TOKEN,
+        discordBotToken = System.getenv("releaseBotToken"),
         indexUpdateServerId = "602893231621144586",
         indexUpdateChannelId = "816772168045953084"
     )
