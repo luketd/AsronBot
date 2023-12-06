@@ -2,7 +2,6 @@
 /shelf/
 /.gradle/
 /build/
-/gradle/
 /storage/
 build.properties
 /.idea/
