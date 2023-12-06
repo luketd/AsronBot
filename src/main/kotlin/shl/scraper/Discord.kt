@@ -60,7 +60,7 @@ class Discord {
                     if (IndexApiClient.isUpdateTrigger(event, config)) {
                         return
                     }
-                    if (isDebug && event.guild.id != BuildProperties.TEST_SERVER_ID || event.author.isBot) {
+                    if (isDebug && event.guild.id != System.getenv("testServerId") || event.author.isBot) {
                         return
                     }
 

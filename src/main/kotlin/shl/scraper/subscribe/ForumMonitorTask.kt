@@ -45,7 +45,7 @@ class ForumMonitorTask(private val config: ForumSubscription, private val discor
         }
         lastThreadId = threads.maxOf { it.threadId }
 
-        if (config.serverId == BuildProperties.TEST_SERVER_ID || config.serverId == HAM_SERVER_ID) {
+        if (config.serverId == System.getenv("testServerId") || config.serverId == HAM_SERVER_ID) {
             sendPtRemindersIfNeeded(threads, channel)
         }
 
