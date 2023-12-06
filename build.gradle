@@ -54,7 +54,7 @@ shadowJar {
     mergeServiceFiles()
     manifest {
         attributes(
-            'Main-Class': 'shl.scraper.Main'
+            'Main-Class': 'shl.scraper.MainKt'
         )
     }
 }
