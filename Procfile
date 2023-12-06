@@ -1,1 +1,1 @@
-worker: java -jar Bot.jar
+worker: java -jar Bot.war
