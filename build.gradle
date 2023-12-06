@@ -55,4 +55,10 @@ jar {
             'Main-Class': 'shl.scraper.MainKt'
         )
     }
+
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
 }
